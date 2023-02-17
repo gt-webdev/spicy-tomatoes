@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* Navbar */
+
+.navbarContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 10px;
+    padding: 10px;
+    background-color: rgb(250, 50, 9);
+}
+
+.navbarContainer > img {
+    background-color: white;
+    border-radius: 100%;
+    padding: 8px;
+}
+
+.navbarContainer > h1 {
+    font-size: 2.4rem;
+    color: white;
+    margin: 0;
+}
+
+/* Review Movie and Back Links / Buttons */
+
+.linkBtn {
+    text-align: center;
+    color: red;
+    font-size: 20px;
+}
+
+.linkBtn:link {
+    text-decoration: none;
+}
+
+
+.linkBtn:visited {
+    text-decoration: none;
+}
+
+
+.linkBtn:hover {
+    text-decoration: underline;
+}
+
+
+.linkBtn:active {
+    text-decoration: none;
+}
+
+
+/* Review List */
+
+.reviewList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 30px;
+}
+
+/* Review Item */
+
+.reviewContainer {
+    border-style: dashed;
+    border: 1px 1px 1px 1px black;
+    width: min(90%, 600px);
+    padding: 10px;
+    border-radius: 10px;
+    border-width: 4px;
+}
+
+.movieName {
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.reviewText {
+    text-align: start;
+    font-size: 1rem;
+}
+
+/* Review Form Container */
+
+.reviewFormContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.reviewFormContainer > input {
+    width: min(90%, 400px);
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.reviewFormContainer > button {
+    font-size: 1.2rem;
+    padding: 10px;
+    color: white;
+    background-color: rgb(250, 50, 9);
+    border-radius: 5px;
+    border: none;
+}
+
+.reviewFormContainer > button:hover {
+    cursor: pointer;
+    background-color: rgb(219, 44, 9);
+}
+
+.reviewFormContainer > button:active {
+    cursor: pointer;
+    background-color: rgb(183, 38, 9);
+}

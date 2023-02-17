@@ -6,32 +6,34 @@
     <title>Spicy Tomatoes</title>
     <!-- Link CSS Stylesheet -->
     <link rel="stylesheet" href="index.css">
+    <!-- Fix Scaling of Website on Mobile Devices -->
+    <meta id="Viewport" name="viewport" content="initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
 </head>
 
 <body>
     <!-- Navbar -->
-    <div>
+    <div class="navbarContainer">
         <img width="50px" height="50px" src="https://d35lsekltq0ycz.cloudfront.net/web-arcade/tomato-transparent.png"/>
         <h1>Spicy Tomatoes</h1>
     </div>
     <!-- Write Review Button -->
-    <a href="rate-movie.html">Review Movie</a>
+    <a href="rate-movie.html" class="linkBtn">Review Movie</a>
     <!-- List of Ratings for Movies -->
-    <div>
+    <div class="reviewList">
         <!-- Example Movie Rating -->
-        <div>
-            <p>Movie Name 1</p>
-            <p>Review 1</p>
+        <div class="reviewContainer">
+            <p class="movieName">Movie Name 1</p>
+            <p class="reviewText">Review 1</p>
+        </div class="reviewContainer">
+        <!-- Example Movie Rating -->
+        <div class="reviewContainer">
+            <p class="movieName">Movie Name 2</p>
+            <p class="reviewText">Review 2</p>
         </div>
         <!-- Example Movie Rating -->
-        <div>
-            <p>Movie Name 2</p>
-            <p>Review 2</p>
-        </div>
-        <!-- Example Movie Rating -->
-        <div>
-            <p>Movie Name 3</p>
-            <p>Review 3</p>
+        <div class="reviewContainer">
+            <p class="movieName">Movie Name 3</p>
+            <p class="reviewText">Review 3</p>
         </div>
     </div>
 </body>
