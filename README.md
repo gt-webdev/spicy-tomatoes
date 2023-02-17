@@ -2,7 +2,9 @@
 
 ## About
 
-Website to post reviews for movies
+Tutorial on how to create a website to post reviews for movies.
+
+The completed code can be seen in the 'complete' branch. The 'main' branch contains the starter code for the tutorial. 
 
 ## Required Software
 
@@ -24,5 +26,5 @@ Website to post reviews for movies
 1. Create a new Firebase project
 2. Enable Firestore Database in 'test' mode (this can be found in the 'Build' drop-down on the left side of the interface)
 3. Go back to 'Project Overview' and click 'Add app' to create a new 'Web' app
-4. Copy and paste the firebaseConfig into the ``dao.js`` file (replace the current definition of the variable)
+4. Copy and paste the firebaseConfig into the ``dao.js`` file (replace the current definition of firebaseConfig)
 5. If you receive an 'insufficient permissions' error, check the 'Rules' for your Cloud Firestore instance
