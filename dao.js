@@ -1,16 +1,14 @@
 /**
  * dao.js
- * Database access object module to abstract interactions with a remotely hosted Firebase database
+ * Database Access Object module to abstract interactions with a remotely hosted Firebase database
  */
 
-// Import the functions you need from the SDKs you need
+// import the functions you need from the SDKs you need
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-analytics.js";
-// TODO: Add SDKs for Firebase products that you want to use
-// https://firebase.google.com/docs/web/setup#available-libraries
+import { getFirestore, getDocs, collection, addDoc } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-firestore.js";
 
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// your web app's Firebase configuration
+// for Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
     apiKey: "AIzaSyD3eTUUl26RRSTOC0hJV8FLib2TWu-ryg8",
     authDomain: "spicy-tomatoes.firebaseapp.com",
@@ -21,6 +19,27 @@ const firebaseConfig = {
     measurementId: "G-SC74NZ17S4"
 };
 
-// Initialize Firebase
+// initialize Firebase
 const app = initializeApp(firebaseConfig);
-const analytics = getAnalytics(app);
+
+// reference to Firebase cloud firestore database
+const db = getFirestore(app);
+
+/**
+ * Method to get documents from a collection in Firebase Cloud Firestore
+ * @param {string} collectionName name of collection in database
+ * @returns list of documents in a collection
+ */
+export const getDocsFromCollection = (collectionName) => {
+    return getDocs(collection(db, collectionName));
+};
+
+/**
+ * Method to add a document to a collection in Firebase Cloud Firestore
+ * @param {object} documentData data of document to add to database
+ * @param {string} collectionName name of collection in database
+ * @retruns promose to handle when database update is complete
+ */
+export const addDocToCollection = (documentData, collectionName) => {
+    return addDoc(collection(db, collectionName), documentData);
+};
