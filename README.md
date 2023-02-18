@@ -28,3 +28,9 @@ The completed code can be seen in the 'complete' branch. The 'main' branch conta
 3. Go back to 'Project Overview' and click 'Add app' to create a new 'Web' app
 4. Copy and paste the firebaseConfig into the ``dao.js`` file (replace the current definition of firebaseConfig)
 5. If you receive an 'insufficient permissions' error, check the 'Rules' for your Cloud Firestore instance
+
+## Screenshots
+
+<img width="1498" alt="Screenshot 2023-02-17 at 7 24 43 PM" src="https://user-images.githubusercontent.com/7110480/219820671-c81420f4-e52e-413f-94eb-f2b3e3165471.png">
+
+<img width="1499" alt="Screenshot 2023-02-17 at 7 24 48 PM" src="https://user-images.githubusercontent.com/7110480/219820676-e1b36fb7-d32b-41ad-a1c4-8018b9ed1a0d.png">
