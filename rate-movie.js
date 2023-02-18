@@ -19,7 +19,7 @@ function submitReview() {
         if (movieName && reviewText) {
             addDocToCollection({ movieName, reviewText }, "reviews")
                 .then(() => {
-                    window.location.href = '/';
+                    window.location.href = '../';
                 }).catch((err) => {
                     console.error("Unable to create new review in database", err);
                     alert("Error creating review in database");
